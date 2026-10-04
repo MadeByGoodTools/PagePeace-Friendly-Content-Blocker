@@ -63,6 +63,10 @@
     "message": "Less",
     "description": "Label to be used to hide popup panel sections"
   },
+  "popupNoWebsite": {
+    "message": "not a website",
+    "description": "Used when popup panel is opened for a local web page"
+  },
   "3pGroupDefault": {
     "message": "Default",
     "description": "Header for a ruleset section in 'Filter lists pane'"
@@ -104,7 +108,7 @@
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
   "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
+    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant PagePeace permission to run user scripts.",
     "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
   },
   "customFiltersImportExportLabel": {
@@ -116,7 +120,7 @@
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
   "userScriptsInfo": {
-    "message": "Open your browser's extensions page (<code>chrome://extensions</code> in Chrome or <code>about:addons</code> in Firefox), open <b>uBO Lite</b> details, and toggle on <b>Allow user scripts</b> (also referred to as “unverified third-party scripts”).",
+    "message": "Open your browser's extensions page (<code>chrome://extensions</code> in Chrome or <code>about:addons</code> in Firefox), open <b>PagePeace</b> details, and toggle on <b>Allow user scripts</b> (also referred to as “unverified third-party scripts”).",
     "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
@@ -224,19 +228,19 @@
     "description": "This describes the default filtering mode setting"
   },
   "filteringMode0Name": {
-    "message": "no filtering",
+    "message": "off",
     "description": "Name of blocking mode 0"
   },
   "filteringMode1Name": {
-    "message": "basic",
+    "message": "standard",
     "description": "Name of blocking mode 1"
   },
   "filteringMode2Name": {
-    "message": "optimal",
+    "message": "strong",
     "description": "Name of blocking mode 2"
   },
   "filteringMode3Name": {
-    "message": "complete",
+    "message": "maximum",
     "description": "Name of blocking mode 3"
   },
   "basicFilteringModeDescription": {
@@ -292,7 +296,7 @@
     "description": "Header for filter-creation section in the dashboard"
   },
   "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
+    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant PagePeace permission to run user scripts.",
     "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
   },
   "developerModeLabel": {
@@ -324,7 +328,7 @@
     "description": "Web page title for the strict-blocked page"
   },
   "strictblockSentence1": {
-    "message": "uBO Lite has prevented the following page from loading:",
+    "message": "PagePeace has prevented the following page from loading:",
     "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {

@@ -165,8 +165,9 @@ body.busy aside {
     animation-fill-mode: forwards;
     display: block;
 }
-hr {
-    margin: 0.5em 0;
+
+body.nodata .needData {
+    visibility: hidden;
 }
 
 /* PagePeace interaction finish: outlined selection, visible focus, round shell. */

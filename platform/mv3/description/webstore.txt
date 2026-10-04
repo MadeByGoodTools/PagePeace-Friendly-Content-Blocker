@@ -1,12 +1,20 @@
-uBO Lite (uBOL) is an MV3-based content blocker.
+PagePeace is a friendly Manifest V3 content blocker for Chrome, Edge, Brave,
+and other Chromium browsers.
 
-The default ruleset corresponds to uBlock Origin's default filterset:
+Its default protection combines uBlock Origin's maintained filters with
+EasyList, EasyPrivacy, Peter Lowe's ad and tracking list, badware protection,
+and the Online Malicious URL Blocklist. Optional privacy, annoyance, mobile,
+and regional rulesets are available from the filtering dashboard.
 
-- uBlock Origin's built-in filter lists
-- EasyList
-- EasyPrivacy
-- Peter Lowe’s Ad and tracking server list
+PagePeace 1.1 adds the latest upstream MV3 filtering improvements, including
+more reliable cosmetic filtering, improved procedural filters, stronger
+scriptlet support, better imported-list performance, custom filter backup and
+restore fixes, and safer handling of non-website browser pages.
 
-You can enable more rulesets by visiting the options page -- click the _Cogs_ icon in the popup panel.
+Simple mode offers clear Standard, Strong, and Maximum protection levels.
+Advanced mode exposes filter lists, custom filters, matched rules, the element
+picker, and site-specific controls. Filtering remains local to the browser.
 
-uBOL is entirely declarative, meaning there is no need for a permanent uBOL process for the filtering to occur, and CSS/JS injection-based content filtering is performed reliably by the browser itself rather than by the extension. This means that uBOL itself does not consume CPU/memory resources while content blocking is ongoing -- uBOL's service worker process is required _only_ when you interact with the popup panel or the option pages.
+PagePeace is a GPLv3 fork based on uBlock Origin and uBlock Origin Lite. It is
+not an official uBlock Origin release and is not endorsed by the upstream
+project.

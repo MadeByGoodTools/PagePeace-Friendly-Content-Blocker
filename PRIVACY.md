@@ -26,4 +26,4 @@ PagePeace does not sell or transfer user data to third parties. The extension is
 
 PagePeace is open source. Questions, privacy concerns, and support requests can be submitted at:
 
-https://github.com/NullGurll/pagepeace/issues
+https://github.com/NullGurll/PagePeace-Friendly-Content-Blocker/issues

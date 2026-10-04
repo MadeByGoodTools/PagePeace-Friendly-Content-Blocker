@@ -94,7 +94,7 @@
     "id": "adguard-spyware-url",
     "name": "AdGuard/uBO – URL Tracking Protection",
     "group": "privacy",
-    "enabled": false,
+    "enabled": true,
     "excludedPlatforms": [ "safari" ],
     "urls": [
       "https://ublockorigin.github.io/uAssets/filters/privacy-removeparam.txt"
@@ -115,7 +115,7 @@
     "id": "annoyances-cookies",
     "name": "EasyList/uBO – Cookie Notices",
     "group": "annoyances",
-    "enabled": false,
+    "enabled": true,
     "urls": [
       "https://ublockorigin.github.io/uAssets/thirdparties/easylist-cookies.txt",
       "https://ublockorigin.github.io/uAssets/filters/annoyances-cookies.txt"
@@ -126,7 +126,7 @@
     "id": "annoyances-overlays",
     "name": "EasyList/uBO – Overlay Notices",
     "group": "annoyances",
-    "enabled": false,
+    "enabled": true,
     "urls": [
       "https://ublockorigin.github.io/uAssets/thirdparties/easylist-newsletters.txt",
       "https://ublockorigin.github.io/uAssets/filters/annoyances-others.txt"
@@ -137,7 +137,7 @@
     "id": "annoyances-social",
     "name": "EasyList – Social Widgets",
     "group": "annoyances",
-    "enabled": false,
+    "enabled": true,
     "urls": [
       "https://ublockorigin.github.io/uAssets/thirdparties/easylist-social.txt"
     ],
@@ -424,13 +424,13 @@
     "id": "kor-1",
     "group": "regions",
     "lang": "ko",
-    "name": "🇰🇷kr: List-KR Classic",
+    "name": "🇰🇷kr: 한국어 (Korean)",
     "tags": "ads korean 한국어",
     "enabled": false,
     "urls": [
-      "https://cdn.jsdelivr.net/npm/@list-kr/filterslists@latest/dist/filterslist-uBlockOrigin-classic.txt"
+      "https://cdn.jsdelivr.net/npm/@filteringdev/filterslists-ko@latest/dist/filterslist-uBlockOrigin-classic.txt"
     ],
-    "homeURL": "https://github.com/List-KR/List-KR#readme"
+    "homeURL": "https://github.com/FilteringDev/filterslists-KO#filteringdevfilterslists-ko"
   },
   {
     "id": "ltu-0",

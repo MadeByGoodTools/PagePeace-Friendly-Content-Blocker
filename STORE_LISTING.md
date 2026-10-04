@@ -14,9 +14,9 @@ Block ads, trackers, and unwanted distractions with friendly controls for every 
 
 ## Full description
 
-PagePeace is a powerful, open-source content blocker with two ways to use it. Easy Mode offers clear protection levels, timed pauses, and step-by-step help when a website breaks. Expert Mode keeps detailed filtering controls, custom lists, rules, logs, and page tools available for experienced users.
+PagePeace is a powerful, open-source Manifest V3 content blocker with two friendly ways to use it. Simple mode offers clear protection levels, timed pauses, and step-by-step help when a website breaks. Advanced mode keeps detailed filtering controls, custom lists, matched rules, and page tools available for experienced users.
 
-PagePeace includes automatic light and dark themes, per-site protection, filter-list updates, element picking, custom filters, and local settings backup. Blocking and preferences are processed locally. PagePeace includes no PagePeace-operated analytics, account system, or advertising.
+The default protection combines uBlock Origin's maintained filters with EasyList, EasyPrivacy, Peter Lowe's list, badware and malicious-site protection, URL tracking protection, cookie-notice cleanup, overlay cleanup, and social-widget filtering. PagePeace also includes automatic light and dark themes, per-site protection, filter-list updates, element picking, custom filters, and local settings backup. Blocking and preferences are processed locally. PagePeace includes no PagePeace-operated analytics, account system, or advertising.
 
 PagePeace is an independent GPLv3 fork based on uBlock Origin and uBlock Origin Lite. It is not an official uBlock Origin release and is not endorsed by the upstream project.
 
@@ -26,7 +26,7 @@ PagePeace is an independent GPLv3 fork based on uBlock Origin and uBlock Origin 
 - Storage: retain settings, rules, and filter-list choices.
 - Alarms: schedule filter updates and restore timed pauses.
 - Scripting: apply filtering and user-requested page tools.
-- Optional site access in MV3: enable stronger protection on sites selected by the user.
+- Website access in MV3: let the browser enforce blocking and page cleanup on visited sites. PagePeace does not transmit browsing history.
 
 ## Required before submission
 

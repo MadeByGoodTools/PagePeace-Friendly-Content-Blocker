@@ -32,7 +32,7 @@
     <section id="easyPanel">
         <div id="easyProtectionState">Protection is on</div>
         <p>Move the slider to choose how quietly PagePeace protects this website.</p>
-        <div class="filteringModeSlider">
+        <div class="filteringModeSlider needData">
             <div class="filteringModeButton"><div></div></div>
             <span data-level="0" aria-label="filteringMode0Name"></span>
             <span data-level="1" aria-label="filteringMode1Name"></span>
@@ -40,7 +40,7 @@
             <span data-level="3" aria-label="filteringMode3Name"></span>
         </div>
         <div class="easyLevelLabels" aria-hidden="true"><span>Off</span><span>Standard</span><span>Strong</span><span>Maximum</span></div>
-        <div id="filteringModeText"><label data-i18n="popupFilteringModeLabel">_</label><br><span>_</span><span></span></div>
+        <div id="filteringModeText" class="needData"><label data-i18n="popupFilteringModeLabel">_</label><br><span>_</span><span></span></div>
         <label id="pauseDurationLabel">Pause length
             <select id="pauseDuration"><option value="10">10 minutes</option><option value="60">1 hour</option><option value="0">Until I turn it back on</option></select>
         </label>
@@ -50,9 +50,9 @@
     </section>
     <div id="expertHeading"><strong>Advanced site controls</strong><small>Choose a detailed preset and use page tools.</small></div>
     <div id="advancedLevels">
-        <button type="button" data-easy-level="1"><strong>Standard</strong><small>Reliable blocking with the fewest site issues</small></button>
-        <button type="button" data-easy-level="2"><strong>Strong</strong><small>Recommended balance of privacy and compatibility</small></button>
-        <button type="button" data-easy-level="3"><strong>Maximum</strong><small>Strongest protection; some sites may need permission</small></button>
+        <button type="button" data-easy-level="1"><strong>Standard</strong><small>Blocks network ads and trackers with the fewest site issues</small></button>
+        <button type="button" data-easy-level="2"><strong>Strong</strong><small>Adds site-specific cosmetic cleanup and scriptlets</small></button>
+        <button type="button" data-easy-level="3"><strong>Maximum</strong><small>Adds generic cosmetic filtering for the cleanest pages</small></button>
     </div>
     <!-- -------- -->
     <div class="toolMenu localTools needHTTP">

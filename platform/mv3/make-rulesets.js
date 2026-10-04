@@ -36,6 +36,7 @@ import {
     minimizeRuleset,
 } from './js/ubo-parser.js';
 
+import { builtinScriptlets } from './js/resources/scriptlets.js';
 import { execSync } from 'node:child_process';
 import { fetchList } from './js/offscreen/fetch-list.js';
 import fs from 'fs/promises';
@@ -82,7 +83,6 @@ const env = [
     'mv3',
     'ublock',
     'ubol',
-    'user_stylesheet',
     ...envExtra,
 ];
 
@@ -894,6 +894,7 @@ async function processPopupRules(assetDetails, popupRules) {
         const { condition }  = rule;
         if ( condition.domainType ) { return data; }
         if ( condition.initiatorDomains ) { return data; }
+        if ( condition.excludedInitiatorDomains ) { return data; }
         const { type } = rule.action;
         if ( type !== 'block' && type !== 'allow' ) { return data; }
         const realm = type === 'block' ? data.block : data.allow;
@@ -1162,6 +1163,24 @@ async function rulesetFromURLs(assetDetails) {
 /******************************************************************************/
 
 async function main() {
+    makeScriptlets.init(builtinScriptlets);
+    // Import scriptlets from web-accessible-resources
+    {
+        const importWAR = (name, details) => {
+            return fs.readFile(`./web_accessible_resources/${name}`, {
+                encoding: 'utf8'
+            }).then(code =>
+                makeScriptlets.importScriptlet({ name, code, ...details })
+            );
+        };
+        const promises = [];
+        for ( const [ name, details ] of redirectResourcesMap ) {
+            if ( name.endsWith('.js') === false ) { continue; }
+            if ( details.data !== 'text' ) { continue; }
+            promises.push(importWAR(name, details));
+        }
+        await Promise.all(promises);
+    }
 
     let version = '';
     {
